@@ -1,0 +1,30 @@
+// first call url
+{
+  "date": "2021/09/03",
+  "time": "09:30",
+  "x": "a1",
+  "y": "b1",
+  "speed": "15km/h"
+}
+// no response
+
+
+// second call url
+{
+  "date": "2021/09/03",
+  "time": "10:30",
+  "x": "a2",
+  "y": "b2",
+  "speed": "15km/h"
+}
+
+
+// output when second call
+{
+  "date": "2021/09/03",
+  "time": "10:30",
+  "x": "a2",
+  "y": "b2",
+  "speed": "15km/h",
+  "distance": "15*1h"
+}
