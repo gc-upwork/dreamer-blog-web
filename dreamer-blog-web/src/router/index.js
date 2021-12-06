@@ -17,11 +17,29 @@ const routes = [
         name: 'signup',
         component: () => import('../components/user/SignUp.vue')
     },
+
     {
         path: '/home',
-        name: 'home',
+        name: 'Home',
+        redirect: '/welcome',/*子路由的重定向*/
+        children: [
+            {
+                path: '/welcome',
+                component: () => import('../components/Welcome.vue')
+            },
+            /*cloud account*/
+            {
+                path: '/cloud',
+                component: () => import('../components/account/CloudAccount.vue')
+            },
+            /*social account*/
+            {
+                path: '/social',
+                component: () => import('../components/account/SocialAccount.vue')
+            }],
+
         component: () => import('../components/Home.vue')
-    }
+    },
 ]
 
 const router = createRouter({
