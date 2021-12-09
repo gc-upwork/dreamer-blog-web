@@ -19,6 +19,12 @@ const routes = [
     },
 
     {
+        path:'/blogHome',
+        name: 'blogHome',
+        component:()=>import('../components/blog/BlogHome.vue')
+    },
+
+    {
         path: '/home',
         name: 'Home',
         redirect: '/welcome',/*子路由的重定向*/

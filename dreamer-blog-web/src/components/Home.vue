@@ -7,6 +7,8 @@
         <img src='../assets/logo.png' alt="picture not found" class="imageTag">
         <span>My System</span>
       </div>
+
+      <el-button @click="turnToBlog">My Blog</el-button>
       <el-button @click="logOut">Log Out</el-button>
     </el-header>
 
@@ -93,6 +95,10 @@ export default {
         })
       })
     },
+
+    turnToBlog() {
+      this.$router.push({path: '/blogHome'})
+    }
 
 
   }
